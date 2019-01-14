@@ -1,0 +1,114 @@
+body {
+    background-color: #efefef;
+    padding-top: 72px;
+}
+section {
+    padding-top: 10px;
+}
+.display-3 {
+    color: #909090;
+}
+.card {
+    border: none !important;
+    border-radius: 0px !important;
+}
+.card-header {
+    border-radius: 0px !important;
+}    
+    
+.card-shadow {
+    -webkit-box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
+    box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
+}
+.card-rounded {
+    border-radius: 15px !important;
+}
+.top-rounded {
+    border-radius: 15px 15px 0px 0px !important;
+}
+.bottom-rounded {
+    border-radius: 0px 0px 15px 15px !important;
+}
+.bg-yournal {
+    background-color: #1976d2;
+}
+
+/* Home */
+@media (min-width: 576px) {
+}
+@media (min-width: 1000px) {
+    .container {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+.social-item {
+    font-size: 18px;
+    border-radius: 1px;
+    color: #555;
+    border: 0;
+}
+.bg-instagram {
+    color: white;
+    background-color: #ad1457;
+}
+
+/* Gallery */
+.carousel-item figcaption{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #FFF;
+    background: rgba(0,0,0,.5);
+    text-shadow: 2px 2px 6px black; 
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.vignette {
+    -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.6);
+    -moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.6);
+    box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.6);
+	
+    line-height: 0;
+    margin-bottom: -6px;
+    display: inline-block;
+}
+.vignette-img {
+    position: relative; 
+    z-index: -1;
+}
+
+/* Projects */
+.btn {
+    margin-bottom: 3px;
+}
+.bg-product {
+    background-color: #f6f6f6;
+}
+@media (min-width: 576px) {
+    .card-columns {column-count: 1;}
+}
+@media (min-width: 768px) {
+    .card-columns {column-count: 2;}
+}
+@media (min-width: 1000px) {
+    .card-columns {column-count: 2;}
+}
+@media (min-width: 1200px) {
+    .card-columns {column-count: 3;}
+}
+/* Freelance */
+.muted-light {
+    font-weight: lighter;
+}
+
+/* Footer */
+.footer-copyright {
+    color: #ffffff;
+    background-color: #1976d2;
+    padding: 10px;
+}
