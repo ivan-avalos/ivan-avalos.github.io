@@ -1,10 +1,9 @@
 body {
     font-family: 'Latin Modern Mono', 'Courier New', Courier, monospace;
     background-color: #efefef;
-    padding-top: 81px;
 }
-section {
-    padding-top: 45px;
+section, div#home {
+    padding-top: 30px;
 }
 hr {
     background-color: #ffffff;
