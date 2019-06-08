@@ -10,6 +10,7 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/avalos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="https://lalten.github.io/lmweb/style/latinmodern-mono.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script>
@@ -48,7 +49,9 @@
                 <a class="btn btn-link social-item"
                     href="https://www.linkedin.com/in/iamavalos"><i class="fab fa-linkedin"></i></a>
                 <a class="btn btn-link social-item"
-                    href="https://www.patreon.com/iavalos"><i class="fab fa-patreon"></i></a>
+                    href="https://www.pexels.com/@ivan-avalos-1286044">
+                    <img src="images/pexels.svg">
+                </a>
                 <a class="btn btn-link social-item"
                     href="mailto:ivan.avalos.diaz@hotmail.com"><i class="fas fa-envelope"></i></a>
             </div>
@@ -73,7 +76,52 @@
             </ul>
         </div>
     </section>
-    <!-- <skills> -->
+    <!-- </skills> -->
+    <!-- <gallery> -->
+    <!-- Slider main container -->
+    <section id="gallery" class="container">
+        <div class="card bg-dark card-shadow card-rounded row">
+            <h1 class="card-header text-white">Gallery</h1>
+            <div class="swiper-container bottom-rounded card-shadow">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide vignette" style="background: url(images/gallery/facebook.jpg)">
+                        <figcaption>
+                            <h3>Facebook Campus</h3>
+                            <p>Went to a business meeting to Facebook headquarters in Menlo Park, CA.</p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide vignette" style="background: url(images/gallery/hackleon.jpg)">
+                        <figcaption>
+                            <h3>HackLeón</h3>
+                            <p>Won first place in the category "safe environment" and third general place at the event  HackLeón 2019 with the Inzon project.</i></p>
+                            <a class="btn btn-sm btn-light" href="https://youtu.be/eM1A-DxiuK4">
+                                <i class="fas fa-video"></i>
+                                Press conference
+                            </a>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide vignette" style="background: url(images/gallery/symbiothon.jpg)">
+                        <figcaption>
+                            <h3>Symbiothon</h3>
+                            <p>Won second place at the Symbiothon event organised by FabLab with the Choose Learn project.</p>
+                        </figcaption>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    <!-- </gallery> -->
     <!-- <projects> -->
     <section id="projects" class="container-fluid">
         <h1 class="display-4">Projects</h1>
@@ -404,8 +452,11 @@
     <footer class="footer-copyright text-white">
         <div class="container py-5">
             <p class="mb-0 text-uppercase font-weight-bold small">
-            <a href="https://avalos.robotronica.mx" class="text-white float-right" rel="noopener">
+            <a href="https://avalos.dulcedosystems.com" class="text-white float-right" rel="noopener">
                 Copyright © 2018 <b>Iván Ávalos</b></a><br>
+            <a href="https://www.pexels.com/photo-license/" class="text-white float-right" rel="noopener">
+                All photos licensed under Pexels licence
+            </a><br>
             <a class="text-white float-right" rel="noopener">Powered by
                 <b>Bootstrap</b> and <b>Font Awesome</b></a>
             </p>
@@ -416,5 +467,7 @@
     <!-- JavaScript -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/avalos.js"></script>
 </body>
 </html>
