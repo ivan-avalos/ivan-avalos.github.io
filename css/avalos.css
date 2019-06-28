@@ -1,9 +1,17 @@
 body {
-    font-family: 'Latin Modern Mono', 'Courier New', Courier, monospace;
-    background-color: #efefef;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    
 }
-section, div#home {
+nav {
+    padding-top: 30px !important;
+    padding-left: 30px !important;
+    padding-bottom: 500px !important;
+}
+section {
     padding-top: 30px;
+}
+div#home {
+    margin-top: -470px;
 }
 hr {
     background-color: #ffffff;
@@ -11,13 +19,16 @@ hr {
 .display-4 {
     color: #424242;
 }
+.card-columns {
+    column-gap: 0.5rem;
+}
 .card {
     border: none !important;
 }
 .card-shadow {
-    -webkit-box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
-    -moz-box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
-    box-shadow: 0px 13px 34px -3px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px 0px 66px -12px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 66px -12px rgba(0,0,0,0.18);
+    box-shadow: 0px 0px 66px -12px rgba(0,0,0,0.18);
 }
 .card-rounded {
     border-radius: 15px !important;
@@ -29,7 +40,9 @@ hr {
     border-radius: 0px 0px 15px 15px !important;
 }
 .bg-yournal {
-    background-color: #1976d2;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
 }
 
 /* Home */
@@ -86,23 +99,25 @@ figcaption {
 }
 
 /* Projects */
+.project {
+}
 .btn {
     margin-bottom: 4px;
 }
 .bg-product {
-    background-color: #f6f6f6;
+    background-color: #fbfbfb;
 }
 @media (min-width: 576px) {
     .card-columns {column-count: 1;}
 }
 @media (min-width: 768px) {
-    .card-columns {column-count: 2;}
+    .card-columns {column-count: 2;margin:1rem;}
 }
 @media (min-width: 1000px) {
-    .card-columns {column-count: 2;}
+    .card-columns {column-count: 2;margin:1rem;}
 }
 @media (min-width: 1200px) {
-    .card-columns {column-count: 3;}
+    .card-columns {column-count: 3;margin:1rem;}
 }
 /* Freelance */
 .muted-light {
@@ -112,6 +127,8 @@ figcaption {
 /* Footer */
 .footer-copyright {
     color: #ffffff;
-    background-color: #1976d2;
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
