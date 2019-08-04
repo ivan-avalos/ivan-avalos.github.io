@@ -5,13 +5,13 @@ body {
 nav {
     padding-top: 30px !important;
     padding-left: 30px !important;
-    padding-bottom: 500px !important;
+    padding-bottom: 200px !important;
 }
 section {
     padding-top: 30px;
 }
 div#home {
-    margin-top: -470px;
+    margin-top: -150px;
 }
 hr {
     background-color: #ffffff;
@@ -99,8 +99,8 @@ figcaption {
 }
 
 /* Projects */
-.project {
-}
+#gallery { margin-bottom: 50px; }
+#projects, #freelance { background-color: #F1F1F1; }
 .btn {
     margin-bottom: 4px;
 }
