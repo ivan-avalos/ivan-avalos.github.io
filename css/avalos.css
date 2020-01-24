@@ -44,6 +44,12 @@ hr {
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 
 }
+.bg-music {
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 /* Home */
 @media (min-width: 576px) {
@@ -98,8 +104,16 @@ figcaption {
     padding-bottom: 30px;
 }
 
+.topartist {
+    color: #FFF;
+    text-shadow: 2px 2px 6px black;
+    margin-top: -30px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
 /* Projects */
-#gallery { margin-bottom: 50px; }
+#more { margin-bottom: 50px; }
 #projects, #freelance { background-color: #F1F1F1; }
 .btn {
     margin-bottom: 4px;
