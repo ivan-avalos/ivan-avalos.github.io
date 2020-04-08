@@ -68,6 +68,9 @@ hr {
     color: white;
     background-color: #ad1457;
 }
+.badge {
+    font-weight: normal !important;
+}
 
 /* Gallery */
 .swiper-container {
