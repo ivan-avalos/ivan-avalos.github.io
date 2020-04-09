@@ -18,7 +18,18 @@
           for (var i=0; i<vidDefer.length; i++) {
             if(vidDefer[i].getAttribute('data-src')) {
               vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-        } } }
+            }
+          }
+          var js = document.querySelectorAll(".js-disabled, .js-enabled");
+          for(var i=0; i<js.length; i++) {
+            if (js[i].classList.contains('js-disabled')) {
+                js[i].style.display = 'none';
+            }
+            if (js[i].classList.contains('js-enabled')) {
+                js[i].style.visibility = 'visible';
+            }
+          }
+        }
         window.onload = init;
     </script>
 </head>
@@ -38,8 +49,7 @@
                 <p class="card-text lead">
                     I'm a 16 year old university student and amateur software developer,
                     designer, artist and project manager. I'm a very creative, intuitive, perfectionist and enthusiast person.
-                    I have basic knowledge on different areas.
-                </p>
+                    I have basic knowledge on different areas.</p>
                 <small class="float-right card-text text-muted">
                     Message me on <a href="https://keybase.io/avalos/chat">Keybase</a>!
                     Or <a href="https://t.me/ivan_avalos/">Telegram</a>.
@@ -48,20 +58,16 @@
             <div class="card-footer text-center bottom-rounded">
                 <!-- Social links -->
                 <a class="btn btn-link social-item"
-                    href="https://www.facebook.com/ivanalejandro.avalosdiaz"><i class="fab fa-facebook"></i></a>
+                    href="https://www.facebook.com/ivanalejandro.avalosdiaz"><i class="fab fa-facebook" alt="Facebook"></i></a>
                 <a href="https://www.instagram.com/aaaaaavalos" class="btn btn-link social-item"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-link social-item"
-                    href="https://www.twitter.com/aaaaaavalos"><i class="fab fa-twitter"></i></a>
+                    href="https://www.twitter.com/aaaaaavalos"><i class="fab fa-twitter" alt="Twitter"></i></a>
                 <a class="btn btn-link social-item"
-                    href="https://github.com/ivan-avalos"><i class="fab fa-github"></i></a>
+                    href="https://github.com/ivan-avalos"><i class="fab fa-github" alt="GitHub"></i></a>
                 <a class="btn btn-link social-item"
-                    href="https://www.linkedin.com/in/iamavalos"><i class="fab fa-linkedin"></i></a>
+                    href="https://www.linkedin.com/in/iamavalos"><i class="fab fa-linkedin" alt="LinkedIn"></i></a>
                 <a class="btn btn-link social-item"
-                    href="https://keybase.io/avalos"><i class="fab fa-keybase"></i></a>
-                <a class="btn btn-link social-item"
-                    href="https://t.me/ivan_avalos"><i class="fab fa-telegram"></i></a>
-                <a class="btn btn-link social-item"
-                    href="https://mastodon.social/web/accounts/1148951"><i class="fab fa-mastodon"></i></a>
+                    href="https://mastodon.social/web/accounts/1148951"><i class="fab fa-mastodon" alt="Mastodon"></i></a>
             </div>
         </div>
     </div>
@@ -73,23 +79,15 @@
             <!-- Advanced skills -->
             <h1 class="card-header text-white">Skills</h1>
             <ul class="list-group list-group-flush">
-                <!--<li class="list-group-item"><i class="fab fa-android"></i>&nbsp; Android development with Kotlin</li>
-                <li class="list-group-item"><i class="fab fa-apple"></i>&nbsp; iOS development with Swift</li>
-                <li class="list-group-item"><i class="fab fa-laravel"></i>&nbsp; Laravel PHP framework</li>
-                <li class="list-group-item"><i class="fas fa-cloud"></i>&nbsp; IoT with ESP8266 + MQTT</li>
-                <li class="list-group-item disabled"><i class="fab fa-python"></i>&nbsp; Python programming</li>
-                <li class="list-group-item disabled bottom-rounded">
-                    <i class="fas fa-code-branch"></i>&nbsp; Git and Subversion
-                </li>-->
-                <li class="list-group-item"><i class="fas fa-server"></i>
+                <li class="list-group-item"><i class="fas fa-server"> </i>
                     Web development
                     <span class="badge badge-warning">Intermediate</span>
                     <small class="badge badge-primary">Laravel</small>
-                <li class="list-group-item"><i class="fas fa-mobile"></i>
+                <li class="list-group-item"><i class="fas fa-mobile"> &nbsp;</i>
                     Mobile development
                     <span class="badge badge-warning">Intermediate</span>
-                    <span class="badge badge-primary">Android Studio</span>
-                    <span class="badge badge-primary">Xcode</span>
+                    <span class="badge badge-primary">Kotlin</span>
+                    <span class="badge badge-primary">Swift</span>
                 </li>
                 <li class="list-group-item"><i class="fas fa-pencil-ruler"></i>
                     Graphic design
@@ -107,12 +105,36 @@
         </div>
     </section>
     <!-- </skills> -->
+    <!-- <links> -->
+    <section id="more" class="container">
+        <div class="card bg-yournal card-shadow card-rounded row">
+            <!-- Advanced skills -->
+            <h1 class="card-header text-white">Links</h1>
+            <ul class="list-group list-group-flush bottom-rounded">
+                <a class="list-group-item" href="https://www.behance.net/iavalos">
+                    <i class="fab fa-behance"></i> Design portfolio</a>
+                <a class="list-group-item" href="https://www.pexels.com/@ivan-avalos-1286044">
+                    <i class="fas fa-camera-retro"></i></i> Photography portfolio</a>
+                    <a class="list-group-item" href="https://www.youtube.com/channel/UCk7UXt08GL_vqdISQFaTviA">
+                        <i class="fab fa-youtube"></i></i> YouTube channel</a>
+                <a class="list-group-item" href="music.html">
+                    <i class="fas fa-music"></i></i> Favorite bands and artists</a>
+                    <a class="list-group-item bottom-rounded" href="https://open.spotify.com/user/0jttzoclkucw0yrmeawkl8mr2?si=MvvFEhjzQ7-NC0JA6rYhyg">
+                        <i class="fab fa-spotify"></i></i> Spotify profile</a>
+            </ul>
+        </div>
+    </section>
+    <!-- </links> -->
     <!-- <gallery> -->
     <!-- Slider main container -->
     <section id="gallery" class="container">
         <div class="card bg-yournal card-shadow card-rounded row">
             <h1 class="card-header text-white">Gallery</h1>
-            <div class="swiper-container bottom-rounded card-shadow">
+            <div class="card-body bg-white js-disabled">
+                <h4>Javascript is disabled</h4>
+                This element requires Javascript.
+            </div>
+            <div class="swiper-container bottom-rounded card-shadow js-enabled">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -158,26 +180,6 @@
         </div>
     </section>
     <!-- </gallery> -->
-    <!-- <links> -->
-    <section id="more" class="container">
-        <div class="card bg-yournal card-shadow card-rounded row">
-            <!-- Advanced skills -->
-            <h1 class="card-header text-white">Links</h1>
-            <ul class="list-group list-group-flush bottom-rounded">
-                <a class="list-group-item" href="https://www.behance.net/iavalos">
-                    <i class="fab fa-behance"></i> Design portfolio</a>
-                <a class="list-group-item" href="https://www.pexels.com/@ivan-avalos-1286044">
-                    <i class="fas fa-camera-retro"></i></i> Photography portfolio</a>
-                    <a class="list-group-item" href="https://www.youtube.com/channel/UCk7UXt08GL_vqdISQFaTviA">
-                        <i class="fab fa-youtube"></i></i> YouTube channel</a>
-                <a class="list-group-item" href="music.html">
-                    <i class="fas fa-music"></i></i> Favorite bands and artists</a>
-                    <a class="list-group-item bottom-rounded" href="https://open.spotify.com/user/0jttzoclkucw0yrmeawkl8mr2?si=MvvFEhjzQ7-NC0JA6rYhyg">
-                        <i class="fab fa-spotify"></i></i> Spotify profile</a>
-            </ul>
-        </div>
-    </section>
-    <!-- </links> -->
     <!-- <projects> -->
     <section id="projects" class="container-fluid">
         <h1 class="display-4">Projects</h1>
@@ -451,9 +453,9 @@
     <footer class="footer-copyright text-white bg-yournal">
         <div class="container py-5">
             <p class="mb-0 text-uppercase font-weight-bold small">
-            <h5 class="float-right"><a class="text-white" href="https://avalos.dulcedosystems.com" rel="noopener">
-                Copyright © 2019 <b>Iván Ávalos</b></a></h5><br>
-            <a class="float-right text-white" rel="noopener">
+            <h5 class="float-left">
+                Copyright © 2020 <a href="#" class="text-white">Iván Ávalos</a></h5><br>
+            <a class="float-left text-white" rel="noopener">
                 Powered by Bootstrap and Font Awesome</a>
             </p>
         </div>

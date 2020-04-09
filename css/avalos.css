@@ -116,7 +116,8 @@ figcaption {
 }
 
 /* Projects */
-#more { margin-bottom: 50px; }
+.js-enabled { visibility: hidden; }
+#gallery { margin-bottom: 50px; }
 #projects, #freelance { background-color: #F1F1F1; }
 .btn {
     margin-bottom: 4px;
