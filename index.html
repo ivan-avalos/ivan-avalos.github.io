@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iván Ávalos</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,9 +58,9 @@
     <!-- </navbar> -->
     
     <!-- <biography> -->
-    <div id="home" class="container">
-        <div class="card card-shadow card-rounded row">
-            <img src="images/pro.jpg" class="card-img-top top-rounded">
+    <div id="home" class="container-fluid">
+        <div id="bio" class="card card-shadow card-rounded row">
+            <img id="bio" src="images/pro.jpg" class="card-img-top top-rounded">
             <div class="card-body">
                 <h1>Iván Ávalos</h1>
                 <p class="card-text lead">
@@ -74,42 +91,92 @@
     <!-- </biography> -->
     
     <!-- <skills> -->
-    <section id="skills" class="container">
-        <div class="card bg-yournal card-shadow card-rounded row">
+    <section id="skills" class="container-fluid">
+        <div class="card card-shadow card-rounded row">
             <!-- Advanced skills -->
-            <h1 class="card-header text-white">Skills</h1>
+            <h1 class="card-header bg-yournal top-rounded text-white">Skills</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><i class="fas fa-server"> </i>
                     Web development
-                    <span class="badge badge-warning">Intermediate</span>
-                    <small class="badge badge-primary">Laravel</small>
-                <li class="list-group-item"><i class="fas fa-mobile"> &nbsp;</i>
+                    <small class="badge badge-success">Laravel</small>
+                    <span class="badge badge-warning">Linux</span>
+                    <span class="badge badge-warning">MySQL</span>
+                    <span class="badge badge-primary">NGINX</span>
+                    <small class="badge badge-primary">AWS</small>
+                    <small class="badge badge-primary">Docker</small>
+                <li class="list-group-item"><i class="fas fa-tablet"></i>
                     Mobile development
-                    <span class="badge badge-warning">Intermediate</span>
-                    <span class="badge badge-primary">Kotlin</span>
-                    <span class="badge badge-primary">Swift</span>
+                    <span class="badge badge-warning">Android SDK</span>
+                    <span class="badge badge-warning">iOS SDK</span>
+                </li>
+                <li class="list-group-item"><i class="fas fa-microchip"></i>
+                    IoT development
+                    <span class="badge badge-warning">ESP8266</span>
+                    <span class="badge badge-warning">Arduino SDK</span>
+                    <span class="badge badge-warning">MQTT</span>
+                    <span class="badge badge-warning">Sigfox</span>
+                </li>
+                <li class="list-group-item"><i class="fas fa-code"></i>
+                    Programming
+                    <span class="badge badge-success">Kotlin</span>
+                    <span class="badge badge-success">Java</span>
+                    <span class="badge badge-success">PHP</span>
+                    <span class="badge badge-warning">Go</span>
+                    <span class="badge badge-warning">Swift</span>
+                    <span class="badge badge-warning">Python</span>
+                    <span class="badge badge-primary">JS</span>
+                    <span class="badge badge-primary">C/C++</span>
+                </li>
+                <li class="list-group-item"><i class="fas fa-window-restore"></i>
+                    UI design
+                    <span class="badge badge-success">HTML/CSS</span>
+                    <span class="badge badge-success">Bootstrap</span>
+                    <span class="badge badge-warning">GTK+</span>
+                    <span class="badge badge-warning">Qt</span>
+                    <span class="badge badge-warning">JavaFX</span>
                 </li>
                 <li class="list-group-item"><i class="fas fa-pencil-ruler"></i>
                     Graphic design
-                    <span class="badge badge-warning">Intermediate</span>
-                    <span class="badge badge-primary">Adobe Illustrator</span>
-                    <span class="badge badge-primary">Bootstrap CSS</span>
+                    <span class="badge badge-warning">Illustrator</span>
+                    <span class="badge badge-warning">Inkscape</span>
                 </li>
-                <li class="list-group-item bottom-rounded"><i class="fas fa-camera-retro"></i>
+                <li class="list-group-item"><i class="fas fa-camera-retro"></i>
                     Digital photography
-                    <span class="badge badge-success">Basic</span>
-                    <span class="badge badge-primary">Sony</span>
-                    <span class="badge badge-primary">darktable</span>
+                    <span class="badge badge-warning">darktable</span>
+                    <span class="badge badge-warning">GIMP</span>
+                    <span class="badge badge-primary">Sony Alpha</span>
+                </li>
+                <li class="list-group-item"><i class="fas fa-tools"></i>
+                    Tools
+                    <span class="badge badge-success">VS Code</span>
+                    <span class="badge badge-success">Android Studio</span>
+                    <span class="badge badge-success">XCode</span>
+                    <span class="badge badge-success">IntelliJ IDEA</span>
+                    <span class="badge badge-success">Keybase</span>
+                    <span class="badge badge-success">Markdown</span>
+                    <span class="badge badge-warning">Git</span>
+                    <span class="badge badge-warning">Emacs</span>
+                    <span class="badge badge-warning">PlatformIO</span>
+                    <span class="badge badge-warning">Arduino IDE</span>
+                    <span class="badge badge-primary">Solidworks</span>
+                </li>
+                <li class="list-group-item bg-light bottom-rounded">
+                    <small class="badge badge-primary">
+                        <i class="fas fa-meh"></i> Learning/basic</small>
+                    <small class="badge badge-warning">
+                        <i class="fas fa-smile"></i> Meh, kinda</small>
+                    <small class="badge badge-success">
+                        <i class="fas fa-laugh-wink"></i> Good enough</small>
                 </li>
             </ul>
         </div>
     </section>
     <!-- </skills> -->
     <!-- <links> -->
-    <section id="more" class="container">
-        <div class="card bg-yournal card-shadow card-rounded row">
+    <section id="more" class="container-fluid">
+        <div class="card card-shadow card-rounded row">
             <!-- Advanced skills -->
-            <h1 class="card-header text-white">Links</h1>
+            <h1 class="card-header bg-yournal top-rounded text-white">Links</h1>
             <ul class="list-group list-group-flush bottom-rounded">
                 <a class="list-group-item" href="https://blog.avalos.me/">
                     <i class="fas fa-blog"></i> Personal blog</a>
@@ -129,9 +196,9 @@
     <!-- </links> -->
     <!-- <gallery> -->
     <!-- Slider main container -->
-    <section id="gallery" class="container">
-        <div class="card bg-yournal card-shadow card-rounded row">
-            <h1 class="card-header text-white">Gallery</h1>
+    <section id="gallery" class="container-fluid">
+        <div class="card card-shadow card-rounded row">
+            <h1 class="card-header bg-yournal top-rounded text-white">Gallery</h1>
             <div class="card-body bg-white js-disabled">
                 <h4>Javascript is disabled</h4>
                 This element requires Javascript.
@@ -142,30 +209,33 @@
                     <!-- Slides -->
                     <div class="swiper-slide vignette" style="background: url(images/gallery/facebook.jpg)">
                         <figcaption>
-                            <h3>Facebook Campus</h3>
-                            <p>Went to a meeting to Facebook headquarters in Menlo Park, CA.</p>
+                            Facebook Campus<br>
+                            <small>Went to a meeting to Facebook headquarters in Menlo Park, CA.</small>
                         </figcaption>
                     </div>
                     <div class="swiper-slide vignete" style="background: url(images/gallery/premio-juventud.jpg)">
                         <figcaption>
-                            <h3>Municipal Youth Award 2019</h3>
-                            <p>Won in the "academic achievement" distinction because of my career path and aspirations.</p>
+                            Municipal Youth Award 2019<br>
+                            <small>Won in the "academic achievement" distinction because of my career path and aspirations.</small>
                         </figcaption> 
                     </div>
                     <div class="swiper-slide vignette" style="background: url(images/gallery/hackleon.jpg)">
                         <figcaption>
-                            <h3>HackLeón</h3>
-                            <p>Won first place in the category "safe environment" and third general place at the event  HackLeón 2019 with the Inzon project.</i></p>
-                            <a class="btn btn-sm btn-light" href="https://youtu.be/eM1A-DxiuK4">
-                                <i class="fas fa-video"></i>
-                                Press conference
+                            HackLeón 2019<br>
+                            <small>Won first place in the category "safe environment" and third general place at the event  HackLeón 2019 with the Inzon project.</small>
+                            
+                            <a class="badge badge-dark" href="https://youtu.be/eM1A-DxiuK4">
+                                
+                                    <i class="fas fa-video"></i>
+                                    Press conference
+                                
                             </a>
                         </figcaption>
                     </div>
                     <div class="swiper-slide vignette" style="background: url(images/gallery/symbiothon.jpg)">
                         <figcaption>
-                            <h3>Symbiothon</h3>
-                            <p>Won second place at the Symbiothon event organised by FabLab with the Choose Learn project.</p>
+                            Symbiothon<br>
+                            <small>Won second place at the Symbiothon event organised by FabLab with the Choose Learn project.</small>
                         </figcaption>
                     </div>
                 </div>
@@ -296,7 +366,7 @@
                             href="https://github.com/ivan-avalos/yournal-ios">
                             <i class="fab fa-github"></i> iOS</a>
                         <a class="btn btn-sm btn-dark" 
-                            href="http://yournal.dulcedosystems.com">
+                            href="http://yournal.avalos.me">
                             <i class="fas fa-reply"></i> Website</a>
                         <a class="btn btn-sm btn-success" 
                             href="https://play.google.com/store/apps/details?id=com.apps.yuxco.yournal">
@@ -431,7 +501,7 @@
             <div class="card-columns">
                 <!-- <vecbajio> -->
                 <div class="card border-0 project">
-                    <h3 class="card-header bg-primary text-white">Vecbajío <small class="muted-light"><b>2018</b></small></h3>
+                    <h3 class="card-header">Vecbajío <small class="text-muted">2013</small></h3>
                     <div class="bg-light text-center">
                         <a href="images/vecbajio.png"><img class="img-fluid" width="500" src="images/vecbajio.png"></a>
                     </div>
@@ -454,18 +524,12 @@
     <!-- <footer> -->
     <footer class="footer-copyright text-white bg-yournal">
         <div class="container py-5">
-            <p class="mb-0 text-uppercase font-weight-bold small">
-                <h5 class="float-left">
-                    Copyright © 2020 <a href="#" class="text-white">Iván Ávalos</a>
-                </h5>
-            </p>
+            Copyright © 2020 <a href="#" class="text-white">Iván Ávalos</a><br>
+            Powered by
+            <a class="text-white" href="https://aws.amazon.com"><i class="fab fa-aws"></i></a>
+            <a class="text-white" href="https://getbootstrap.com"><i class="fab fa-bootstrap"></i></a>
+            <a class="text-white" href="https://fontawesome.com"><i class="fab fa-font-awesome"></i></a>
             <br>
-            <p class="mb-0 text-uppercase">
-                Powered by
-                <a class="text-white" href="https://aws.amazon.com"><i class="fab fa-aws"></i></a>
-                <a class="text-white" href="https://getbootstrap.com"><i class="fab fa-bootstrap"></i></a>
-                <a class="text-white" href="https://fontawesome.com"><i class="fab fa-font-awesome"></i></a>
-            </p>
         </div>
     </footer>
     <!-- </footer -->
