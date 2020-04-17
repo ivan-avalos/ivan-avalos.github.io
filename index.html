@@ -27,500 +27,508 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/avalos.css">
+    <link rel="stylesheet" href="css/avalos-dark.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="js/darkmode-js.min.js"></script>
     <script>
         function init() {
-          var vidDefer = document.getElementsByTagName('iframe');
-          for (var i=0; i<vidDefer.length; i++) {
-            if(vidDefer[i].getAttribute('data-src')) {
-              vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+          document.getElementById('switchTheme').style.visibility = 'visible';
+                var vidDefer = document.getElementsByTagName('iframe');
+                for (var i = 0; i < vidDefer.length; i++) {
+                    if (vidDefer[i].getAttribute('data-src')) {
+                        vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+                    }
+                }
+                var js = document.querySelectorAll(".js-disabled, .js-enabled");
+                for (var i = 0; i < js.length; i++) {
+                    if (js[i].classList.contains('js-disabled')) {
+                        js[i].style.display = 'none';
+                    }
+                    if (js[i].classList.contains('js-enabled')) {
+                        js[i].style.visibility = 'visible';
+                    }
+                }
             }
-          }
-          var js = document.querySelectorAll(".js-disabled, .js-enabled");
-          for(var i=0; i<js.length; i++) {
-            if (js[i].classList.contains('js-disabled')) {
-                js[i].style.display = 'none';
-            }
-            if (js[i].classList.contains('js-enabled')) {
-                js[i].style.visibility = 'visible';
-            }
-          }
-        }
-        window.onload = init;
+            window.onload = init;
     </script>
 </head>
-<body class="bg-light">
-    <!-- <navbar> -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-yournal">
-        <span class="mb-0 h3"><a href="#" class="text-white">Iván Ávalos</a></span>
-    </nav>
-    <!-- </navbar> -->
-    
-    <!-- <biography> -->
-    <div id="home" class="container-fluid">
-        <div id="bio" class="card card-shadow card-rounded row">
-            <img id="bio" src="images/pro.jpg" class="card-img-top top-rounded">
-            <div class="card-body">
-                <h1>Iván Ávalos</h1>
-                <p class="card-text lead">
-                    I'm a 16 year old university student and amateur software developer,
-                    designer and artist. Creative, intuitive, perfectionist and enthusiast.
-                    I have basic knowledge on different areas.</p>
-                <small class="float-right card-text text-muted">
-                    Message me on <a href="https://keybase.io/avalos/chat">Keybase</a>!
-                    Or <a href="https://t.me/ivan_avalos/">Telegram</a>.
-                    Or <a href="mailto:ivan.avalos.diaz@hotmail.com">E-Mail</a>.</small>
-            </div>
-            <div class="card-footer text-center bottom-rounded">
-                <!-- Social links -->
-                <a class="btn btn-link social-item"
-                    href="https://cybre.space/@avalos"><i class="fab fa-mastodon" alt="Mastodon"></i></a>
-                <a class="btn btn-link social-item"
-                    href="https://www.facebook.com/ivanalejandro.avalosdiaz"><i class="fab fa-facebook" alt="Facebook"></i></a>
-                <a href="https://www.instagram.com/aaaaaavalos" class="btn btn-link social-item"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-link social-item"
-                    href="https://www.twitter.com/aaaaaavalos"><i class="fab fa-twitter" alt="Twitter"></i></a>
-                <a class="btn btn-link social-item"
-                    href="https://github.com/ivan-avalos"><i class="fab fa-github" alt="GitHub"></i></a>
-                <a class="btn btn-l`ink social-item"
-                    href="https://www.linkedin.com/in/iamavalos"><i class="fab fa-linkedin" alt="LinkedIn"></i></a>
+<body>
+    <div class="layer bg-light">
+        <!-- <navbar> -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-yournal">
+            <span class="mb-0 h3 mr-auto"><a href="#" class="text-white">Iván Ávalos</a></span>
+            <span class="navbar-text mr-3">
+                <a id="switchTheme" href="#" class="btn btn-sm btn-dark"
+                onclick="switchTheme()" style="visibility: hidden;">
+                    Dark Mode
+                </a>
+            </span>
+        </nav>
+        <!-- </navbar> -->
+        
+        <!-- <biography> -->
+        <div id="home" class="container-fluid">
+            <div id="bio" class="card card-shadow card-rounded row">
+                <img id="bio" src="images/pro.jpg" class="card-img-top top-rounded">
+                <div class="card-body">
+                    <h1>Iván Ávalos</h1>
+                    <p class="card-text lead">
+                        I'm a 16 year old university student and amateur software developer,
+                        designer and artist. Creative, intuitive, perfectionist and enthusiast.
+                        I have basic knowledge on different areas.</p>
+                    <small class="float-right card-text text-muted">
+                        Message me on <a href="https://keybase.io/avalos/chat">Keybase</a>!
+                        Or <a href="https://t.me/ivan_avalos/">Telegram</a>.
+                        Or <a href="mailto:ivan.avalos.diaz@hotmail.com">E-Mail</a>.</small>
+                </div>
+                <div class="card-footer text-center bottom-rounded">
+                    <!-- Social links -->
+                    <a class="btn btn-link social-item"
+                        href="https://cybre.space/@avalos"><i class="fab fa-mastodon" alt="Mastodon"></i></a>
+                    <a class="btn btn-link social-item"
+                        href="https://www.facebook.com/ivanalejandro.avalosdiaz"><i class="fab fa-facebook" alt="Facebook"></i></a>
+                    <a href="https://www.instagram.com/aaaaaavalos" class="btn btn-link social-item"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link social-item"
+                        href="https://www.twitter.com/aaaaaavalos"><i class="fab fa-twitter" alt="Twitter"></i></a>
+                    <a class="btn btn-link social-item"
+                        href="https://github.com/ivan-avalos"><i class="fab fa-github" alt="GitHub"></i></a>
+                    <a class="btn btn-l`ink social-item"
+                        href="https://www.linkedin.com/in/iamavalos"><i class="fab fa-linkedin" alt="LinkedIn"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- </biography> -->
-    
-    <!-- <skills> -->
-    <section id="skills" class="container-fluid">
-        <div class="card card-shadow card-rounded row">
-            <!-- Advanced skills -->
-            <h1 class="card-header bg-yournal top-rounded text-white">Skills</h1>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fas fa-server"> </i>
-                    Web development
-                    <small class="badge badge-success">Laravel</small>
-                    <span class="badge badge-warning">Linux</span>
-                    <span class="badge badge-warning">MySQL</span>
-                    <span class="badge badge-primary">NGINX</span>
-                    <small class="badge badge-primary">AWS</small>
-                    <small class="badge badge-primary">Docker</small>
-                <li class="list-group-item"><i class="fas fa-tablet"></i>
-                    Mobile development
-                    <span class="badge badge-warning">Android SDK</span>
-                    <span class="badge badge-warning">iOS SDK</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-microchip"></i>
-                    IoT development
-                    <span class="badge badge-warning">ESP8266</span>
-                    <span class="badge badge-warning">Arduino SDK</span>
-                    <span class="badge badge-warning">MQTT</span>
-                    <span class="badge badge-warning">Sigfox</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-code"></i>
-                    Programming
-                    <span class="badge badge-success">Kotlin</span>
-                    <span class="badge badge-success">Java</span>
-                    <span class="badge badge-success">PHP</span>
-                    <span class="badge badge-warning">Go</span>
-                    <span class="badge badge-warning">Swift</span>
-                    <span class="badge badge-warning">Python</span>
-                    <span class="badge badge-primary">JS</span>
-                    <span class="badge badge-primary">C/C++</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-window-restore"></i>
-                    UI design
-                    <span class="badge badge-success">HTML/CSS</span>
-                    <span class="badge badge-success">Bootstrap</span>
-                    <span class="badge badge-warning">GTK+</span>
-                    <span class="badge badge-warning">Qt</span>
-                    <span class="badge badge-warning">JavaFX</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-pencil-ruler"></i>
-                    Graphic design
-                    <span class="badge badge-warning">Illustrator</span>
-                    <span class="badge badge-warning">Inkscape</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-camera-retro"></i>
-                    Digital photography
-                    <span class="badge badge-warning">darktable</span>
-                    <span class="badge badge-warning">GIMP</span>
-                    <span class="badge badge-primary">Sony Alpha</span>
-                </li>
-                <li class="list-group-item"><i class="fas fa-tools"></i>
-                    Tools
-                    <span class="badge badge-success">VS Code</span>
-                    <span class="badge badge-success">Android Studio</span>
-                    <span class="badge badge-success">XCode</span>
-                    <span class="badge badge-success">IntelliJ IDEA</span>
-                    <span class="badge badge-success">Keybase</span>
-                    <span class="badge badge-success">Markdown</span>
-                    <span class="badge badge-warning">Git</span>
-                    <span class="badge badge-warning">Emacs</span>
-                    <span class="badge badge-warning">PlatformIO</span>
-                    <span class="badge badge-warning">Arduino IDE</span>
-                    <span class="badge badge-primary">Solidworks</span>
-                </li>
-                <li class="list-group-item bg-light bottom-rounded">
-                    <small class="badge badge-primary">
-                        <i class="fas fa-meh"></i> Learning/basic</small>
-                    <small class="badge badge-warning">
-                        <i class="fas fa-smile"></i> Meh, kinda</small>
-                    <small class="badge badge-success">
-                        <i class="fas fa-laugh-wink"></i> Good enough</small>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- </skills> -->
-    <!-- <links> -->
-    <section id="more" class="container-fluid">
-        <div class="card card-shadow card-rounded row">
-            <!-- Advanced skills -->
-            <h1 class="card-header bg-yournal top-rounded text-white">Links</h1>
-            <ul class="list-group list-group-flush bottom-rounded">
-                <a class="list-group-item" href="https://blog.avalos.me/">
-                    <i class="fas fa-blog"></i> Personal blog</a>
-                <a class="list-group-item" href="https://www.behance.net/iavalos">
-                    <i class="fab fa-behance"></i> Design portfolio</a>
-                <a class="list-group-item" href="https://www.pexels.com/@ivan-avalos-1286044">
-                    <i class="fas fa-camera-retro"></i></i> Photography portfolio</a>
-                    <a class="list-group-item" href="https://www.youtube.com/channel/UCk7UXt08GL_vqdISQFaTviA">
-                        <i class="fab fa-youtube"></i></i> YouTube channel</a>
-                <a class="list-group-item" href="music.html">
-                    <i class="fas fa-music"></i></i> Favorite bands and artists</a>
-                    <a class="list-group-item bottom-rounded" href="https://open.spotify.com/user/0jttzoclkucw0yrmeawkl8mr2?si=MvvFEhjzQ7-NC0JA6rYhyg">
-                        <i class="fab fa-spotify"></i></i> Spotify profile</a>
-            </ul>
-        </div>
-    </section>
-    <!-- </links> -->
-    <!-- <gallery> -->
-    <!-- Slider main container -->
-    <section id="gallery" class="container-fluid">
-        <div class="card card-shadow card-rounded row">
-            <h1 class="card-header bg-yournal top-rounded text-white">Gallery</h1>
-            <div class="card-body bg-white js-disabled">
-                <h4>Javascript is disabled</h4>
-                This element requires Javascript.
+        <!-- </biography> -->
+        
+        <!-- <skills> -->
+        <section id="skills" class="container-fluid">
+            <div class="card card-shadow card-rounded row">
+                <!-- Advanced skills -->
+                <h1 class="card-header bg-yournal top-rounded text-white">Skills</h1>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-server"> </i>
+                        Web development
+                        <span class="skill badge bg-yournal">Laravel</span>
+                        <span class="skill badge bg-yournal">Linux</span>
+                        <span class="skill badge bg-yournal">MySQL</span>
+                        <span class="skill badge bg-yournal">NGINX</span>
+                        <span class="skill badge bg-yournal">AWS</span>
+                        <span class="skill badge bg-yournal">Docker</span>
+                        <span class="skill badge bg-yournal">Go</span>
+                    <li class="list-group-item"><i class="fas fa-tablet"></i>
+                        Mobile development
+                        <span class="skill badge bg-yournal">Android SDK</span>
+                        <span class="skill badge bg-yournal">iOS SDK</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-microchip"></i>
+                        IoT development
+                        <span class="skill badge bg-yournal">ESP8266</span>
+                        <span class="skill badge bg-yournal">Arduino SDK</span>
+                        <span class="skill badge bg-yournal">MQTT</span>
+                        <span class="skill badge bg-yournal">Sigfox</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-code"></i>
+                        Programming
+                        <span class="skill badge bg-yournal">Kotlin</span>
+                        <span class="skill badge bg-yournal">Java</span>
+                        <span class="skill badge bg-yournal">PHP</span>
+                        <span class="skill badge bg-yournal">Go</span>
+                        <span class="skill badge bg-yournal">Swift</span>
+                        <span class="skill badge bg-yournal">Python</span>
+                        <span class="skill badge bg-yournal">JS</span>
+                        <span class="skill badge bg-yournal">C/C++</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-window-restore"></i>
+                        UI design
+                        <span class="skill badge bg-yournal">HTML/CSS</span>
+                        <span class="skill badge bg-yournal">Bootstrap</span>
+                        <span class="skill badge bg-yournal">GTK+</span>
+                        <span class="skill badge bg-yournal">Qt</span>
+                        <span class="skill badge bg-yournal">JavaFX</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-pencil-ruler"></i>
+                        Graphic design
+                        <span class="skill badge bg-yournal">Illustrator</span>
+                        <span class="skill badge bg-yournal">Inkscape</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-camera-retro"></i>
+                        Digital photography
+                        <span class="skill badge bg-yournal">Sony Alpha</span>
+                        <span class="skill badge bg-yournal">darktable</span>
+                        <span class="skill badge bg-yournal">Lightroom</span>
+                        <span class="skill badge bg-yournal">GIMP</span>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-tools"></i>
+                        Tools
+                        <span class="skill badge bg-yournal">VS Code</span>
+                        <span class="skill badge bg-yournal">Android Studio</span>
+                        <span class="skill badge bg-yournal">XCode</span>
+                        <span class="skill badge bg-yournal">IntelliJ IDEA</span>
+                        <span class="skill badge bg-yournal">Keybase</span>
+                        <span class="skill badge bg-yournal">Markdown</span>
+                        <span class="skill badge bg-yournal">Git</span>
+                        <span class="skill badge bg-yournal">Emacs</span>
+                        <span class="skill badge bg-yournal">PlatformIO</span>
+                        <span class="skill badge bg-yournal">Arduino IDE</span>
+                        <span class="skill badge bg-yournal">Travis CI</span>
+                        <span class="skill badge bg-yournal">Solidworks</span>
+                    </li>
+                </ul>
+                <div class="card-footer bottom-rounded text-right">
+                    <small class="text-muted">* Proficiency levels vary.</small>
+                </div>
             </div>
-            <div class="swiper-container bottom-rounded card-shadow js-enabled">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide vignette" style="background: url(images/gallery/facebook.jpg)">
-                        <figcaption>
-                            Facebook Campus<br>
-                            <small>Went to a meeting to Facebook headquarters in Menlo Park, CA.</small>
-                        </figcaption>
-                    </div>
-                    <div class="swiper-slide vignete" style="background: url(images/gallery/premio-juventud.jpg)">
-                        <figcaption>
-                            Municipal Youth Award 2019<br>
-                            <small>Won in the "academic achievement" distinction because of my career path and aspirations.</small>
-                        </figcaption> 
-                    </div>
-                    <div class="swiper-slide vignette" style="background: url(images/gallery/hackleon.jpg)">
-                        <figcaption>
-                            HackLeón 2019<br>
-                            <small>Won first place in the category "safe environment" and third general place at the event  HackLeón 2019 with the Inzon project.</small>
-                            
-                            <a class="badge badge-dark" href="https://youtu.be/eM1A-DxiuK4">
+        </section>
+        <!-- </skills> -->
+        <!-- <links> -->
+        <section id="more" class="container-fluid">
+            <div class="card card-shadow card-rounded row">
+                <!-- Advanced skills -->
+                <h1 class="card-header bg-yournal top-rounded text-white">Links</h1>
+                <ul class="list-group list-group-flush bottom-rounded">
+                    <a class="list-group-item" href="https://blog.avalos.me/">
+                        <i class="fas fa-blog"></i> Personal blog</a>
+                    <a class="list-group-item" href="https://www.behance.net/iavalos">
+                        <i class="fab fa-behance"></i> Design portfolio</a>
+                    <a class="list-group-item" href="https://www.pexels.com/@ivan-avalos-1286044">
+                        <i class="fas fa-camera-retro"></i></i> Photography portfolio</a>
+                        <a class="list-group-item" href="https://www.youtube.com/channel/UCk7UXt08GL_vqdISQFaTviA">
+                            <i class="fab fa-youtube"></i></i> YouTube channel</a>
+                    <a class="list-group-item" href="music.html">
+                        <i class="fas fa-music"></i></i> Favorite bands and artists</a>
+                        <a class="list-group-item bottom-rounded" href="https://open.spotify.com/user/0jttzoclkucw0yrmeawkl8mr2?si=MvvFEhjzQ7-NC0JA6rYhyg">
+                            <i class="fab fa-spotify"></i></i> Spotify profile</a>
+                </ul>
+            </div>
+        </section>
+        <!-- </links> -->
+        <!-- <gallery> -->
+        <!-- Slider main container -->
+        <section id="gallery" class="container-fluid">
+            <div class="card card-shadow card-rounded row">
+                <h1 class="card-header bg-yournal top-rounded text-white">Gallery</h1>
+                <div class="card-body bg-white js-disabled">
+                    <h4>Javascript is disabled</h4>
+                    This element requires Javascript.
+                </div>
+                <div class="swiper-container bottom-rounded card-shadow js-enabled">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide vignete" style="background: url(images/gallery/premio-juventud.jpg)">
+                            <figcaption>
+                                <b>Municipal Youth Award 2019</b><br>
+                                <small>Won in the "academic achievement" distinction because of my career path and aspirations.</small>
+                            </figcaption> 
+                        </div>
+                        <div class="swiper-slide vignette" style="background: url(images/gallery/facebook.jpg)">
+                            <figcaption>
+                                <b>Facebook Campus</b><br>
+                                <small>Went to a meeting to Facebook headquarters in Menlo Park, CA.</small>
+                            </figcaption>
+                        </div>  
+                        <div class="swiper-slide vignette" style="background: url(images/gallery/hackleon.jpg)">
+                            <figcaption>
+                                <b>HackLeón 2019</b><br>
+                                <small>Won first place in the category "safe environment" and third general place at the event  HackLeón 2019 with the Inzon project.</small>
                                 
-                                    <i class="fas fa-video"></i>
-                                    Press conference
-                                
-                            </a>
-                        </figcaption>
+                                <a class="badge badge-dark" href="https://youtu.be/eM1A-DxiuK4">
+                                    
+                                        <i class="fas fa-video"></i>
+                                        Press conference
+                                    
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="swiper-slide vignette" style="background: url(images/gallery/symbiothon.jpg)">
+                            <figcaption>
+                                <b>Symbiothon</b><br>
+                                <small>Won second place at the Symbiothon event organised by FabLab with the Choose Learn project.</small>
+                            </figcaption>
+                        </div>
                     </div>
-                    <div class="swiper-slide vignette" style="background: url(images/gallery/symbiothon.jpg)">
-                        <figcaption>
-                            Symbiothon<br>
-                            <small>Won second place at the Symbiothon event organised by FabLab with the Choose Learn project.</small>
-                        </figcaption>
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
-        </div>
-    </section>
-    <!-- </gallery> -->
-    <!-- <projects> -->
-    <section id="projects" class="container-fluid">
-        <h1 class="display-4">Projects</h1>
-        <div class="row">
-            <div class="card-columns">
-                <!-- <intervigia> -->
-                <div class="card project border-0 project">
-                    <h3 class="card-header">Intervigía
-                        <small class="text-muted">2019</small></h3>
-                    <div class="bg-product text-center">
-                        <a href="images/intervigia.png"><img class="img-fluid" src="images/intervigia.png"></a>
+        </section>
+        <!-- </gallery> -->
+        <!-- <projects> -->
+        <section id="projects" class="container-fluid portfolio">
+            <h1 class="display-4">Projects</h1>
+            <div class="row">
+                <div class="card-columns">
+                    <!-- <intervigia> -->
+                    <div class="card project border-0 project">
+                        <h3 class="card-header">Intervigía
+                            <small class="text-muted">2019</small></h3>
+                        <div class="bg-product text-center">
+                            <a href="images/intervigia.png"><img class="img-fluid" src="images/intervigia.png"></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text lead">
+                                Intervigía is a modern security system based on citizen participation that allows you to report immediately to the members of your neighbourhood network about any burglary or incident, right from your smartphone or physical button.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="fas fa-asterisk"></i>
+                                    Only available in Mexico. Please contact us from the website if you're interested.
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-dark" 
+                                href="https://intervigia.com">
+                                <i class="fas fa-reply"></i> Website</a>
+                            <a class="btn btn-sm btn-success" 
+                                href="https://play.google.com/store/apps/details?id=com.dulcedosystems.intervigia">
+                                <i class="fab fa-google-play"></i> Google Play</a>
+                            <a class="btn btn-sm btn-warning" 
+                                href="https://itunes.apple.com/mx/app/intervig%C3%ADa/id1448534308">
+                                <i class="fab fa-app-store"></i> App Store</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text lead">
-                            Intervigía is a modern security system based on citizen participation that allows you to report immediately to the members of your neighbourhood network about any burglary or incident, right from your smartphone or physical button.
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted">
-                                <i class="fas fa-asterisk"></i>
-                                Only available in Mexico. Please contact us from the website if you're interested.
-                            </small>
-                        </p>
+                    <!-- </intervigia> -->
+                    <!-- <api-documenter> -->
+                    <div class="card project">
+                        <h3 class="card-header">api-documenter
+                            <small class="text-muted">2018</small></h3>
+                        <div class="bg-product text-center">
+                            <a href="images/api-documenter.png"><img class="img-fluid" src="images/api-documenter.png"></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text lead">
+                                api-documenter is a tool that allows you to generate beautiful documentation for your API from a JSON description file easily. The <a href="https://ivan-avalos.github.io/linkbucket">Linkbucket API</a> documentation was created using this amazing tool.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/ivan-avalos/api-documenter" 
+                                class="btn btn-sm btn-primary">
+                                <i class="fab fa-github"></i> Source code</a>
+                            <a href="https://ivan-avalos.github.io/api-documenter" 
+                                class="btn btn-sm btn-success">
+                                <i class="fas fa-reply"></i> Demo</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-dark" 
-                            href="https://intervigia.com">
-                            <i class="fas fa-reply"></i> Website</a>
-                        <a class="btn btn-sm btn-success" 
-                            href="https://play.google.com/store/apps/details?id=com.dulcedosystems.intervigia">
-                            <i class="fab fa-google-play"></i> Google Play</a>
-                        <a class="btn btn-sm btn-warning" 
-                            href="https://itunes.apple.com/mx/app/intervig%C3%ADa/id1448534308">
-                            <i class="fab fa-app-store"></i> App Store</a>
-                    </div>
-                </div>
-                <!-- </intervigia> -->
-                <!-- <api-documenter> -->
-                <div class="card project">
-                    <h3 class="card-header">api-documenter
-                        <small class="text-muted">2018</small></h3>
-                    <div class="bg-product text-center">
-                        <a href="images/api-documenter.png"><img class="img-fluid" src="images/api-documenter.png"></a>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text lead">
-                            api-documenter is a tool that allows you to generate beautiful documentation for your API from a JSON description file easily. The <a href="https://ivan-avalos.github.io/linkbucket">Linkbucket API</a> documentation was created using this amazing tool.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/ivan-avalos/api-documenter" 
-                            class="btn btn-sm btn-primary">
-                            <i class="fab fa-github"></i> Source code</a>
-                        <a href="https://ivan-avalos.github.io/api-documenter" 
-                            class="btn btn-sm btn-success">
-                            <i class="fas fa-reply"></i> Demo</a>
-                    </div>
-                </div>
-                <!-- </api-documenter -->
+                    <!-- </api-documenter -->
 
-                <!-- <linkbucket> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Linkbucket <small class="text-muted">2018</small></h3>
-                    <div class="bg-product text-center">
-                        <a href="images/linkbucket.png"><img class="img-fluid" src="images/linkbucket.png"></a>
+                    <!-- <linkbucket> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Linkbucket <small class="text-muted">2018</small></h3>
+                        <div class="bg-product text-center">
+                            <a href="images/linkbucket.png"><img class="img-fluid" src="images/linkbucket.png"></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text lead">
+                                Linkbucket is a bookmark manager where you can save your bookmarks in the cloud and access to them from any device. It's useful to backup important links and manage them easily. The free and open source alternative to Pocket and Delicious.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/linkbucket">
+                                <i class="fab fa-github"></i> Source code</a>
+                            <a class="btn btn-sm btn-success" 
+                                href="http://linkbucket.avalos.me/">
+                                <i class="fas fa-reply"></i> Try it</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text lead">
-                            Linkbucket is a bookmark manager where you can save your bookmarks in the cloud and access to them from any device. It's useful to backup important links and manage them easily. The free and open source alternative to Pocket and Delicious.
-                        </p>
+                    <!-- </linkbucket> -->
+                    
+                    <!-- <rekonq> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Rekonq <small class="text-muted">2018</small></h3>
+                        <div class="bg-product text-center">
+                            <a href="images/rekonq.png"><img class="img-fluid" src="images/rekonq.png"></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text lead">Rekonq is a strategy game in which you shall conquer to win. When a cell is conquered, stays conquered permanently. The goal is to conquer most of the board and block the movements of the opposite player.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/rekonq/">
+                                <i class="fab fa-github"></i> Source code</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/linkbucket">
-                            <i class="fab fa-github"></i> Source code</a>
-                        <a class="btn btn-sm btn-success" 
-                            href="http://linkbucket.avalos.me/">
-                            <i class="fas fa-reply"></i> Try it</a>
+                    <!-- </rekonq> -->
+                    
+                    <!-- <yournal> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Yournal <small class="text-muted">2017</small></h3>
+                        <a href="images/yournal.png"><img class="img-fluid" src="images/yournal.png"></a>
+                        <div class="card-body">
+                            <p class="card-text lead">Yournal is a minimalist and cloud-based diary where you can write your life and read it comfortably from any mobile device connected to the Internet. Designed with simplicity in mind, focused on user experience and made for people of all ages.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/yournal-android">
+                                <i class="fab fa-github"></i> Android</a>
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/yournal-ios">
+                                <i class="fab fa-github"></i> iOS</a>
+                            <a class="btn btn-sm btn-dark" 
+                                href="http://yournal.avalos.me">
+                                <i class="fas fa-reply"></i> Website</a>
+                            <a class="btn btn-sm btn-success" 
+                                href="https://play.google.com/store/apps/details?id=com.apps.yuxco.yournal">
+                                <i class="fab fa-google-play"></i> Google Play</a>
+                            <a class="btn btn-sm btn-warning" 
+                                href="https://itunes.apple.com/mx/app/yournal/id1449688447">
+                                <i class="fab fa-app-store"></i> App Store</a>
+                        </div>
                     </div>
-                </div>
-                <!-- </linkbucket> -->
-                
-                <!-- <rekonq> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Rekonq <small class="text-muted">2018</small></h3>
-                    <div class="bg-product text-center">
-                        <a href="images/rekonq.png"><img class="img-fluid" src="images/rekonq.png"></a>
+                    <!-- </yournal> -->
+                    
+                    <!-- <xmas-mode> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Xmas mode <small class="text-muted">2017</small></h3>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/IVT-Yrz4oBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Tired of connecting and disconnecting your Christmas tree manually? This project consists on an automatized Christmas tree, which you can turn on and off from your phone.
+                            </p>
+                            <p class="card-text">
+                                <h5>Materials</h5>
+                                <div class="list-group">
+                                    <a class="list-group-item"
+                                        href="http://www.electrodragon.com/product/wifi-iot-relay-board-spdt-based-esp8266/">
+                                        WiFi IoT Relay Board based on ESP8266</a>
+                                    <a class="list-group-item"
+                                        href="http://www.electrodragon.com/product/orange-pi-one-better-rpi-zero/">
+                                        Orange Pi One</a>
+                                </div>
+                            </p>
+                            <p class="card-text">
+                                <h5>Software</h5>
+                                <div class="list-group">
+                                    <a class="list-group-item" href="https://www.arduino.cc/en/Main/Software">
+                                        Arduino IDE <small class="text-muted">(Program ESP8266)</small></a>
+                                    <a class="list-group-item" href="https://developer.android.com/studio/index.html">
+                                        Android Studio <small class="text-muted">(Android app)</small></a>
+                                    <a class="list-group-item" href="https://projects.eclipse.org/projects">
+                                        Eclipse Mosquitto <small class="text-muted">(MQTT Server)</small></a>
+                                    <a class="list-group-item" href="http://www.eclipse.org/paho/">
+                                        Eclipse Paho <small class="text-muted">(MQTT Client)</small></a>
+                                    <a class="list-group-item" href="https://github.com/knolleary/pubsubclient">
+                                        PubSubClient Library <small class="text-muted">(ESP8266 MQTT Client)</small></a>
+                                    <a class="list-group-item" href="http://anjuta.org/">
+                                        Anjuta IDE <small class="text-muted">(GTK+ Linux application)</small></a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/xmas-mode">
+                                <i class="fab fa-github"></i> Source code</a>
+                            <a class="btn btn-sm btn-danger" 
+                                href="https://peertube.social/videos/watch/4e5b4911-79ae-426f-9377-dd4b0d852464">
+                                <i class="fas fa-video"></i> Video</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text lead">Rekonq is a strategy game in which you shall conquer to win. When a cell is conquered, stays conquered permanently. The goal is to conquer most of the board and block the movements of the opposite player.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/rekonq/">
-                            <i class="fab fa-github"></i> Source code</a>
-                    </div>
-                </div>
-                <!-- </rekonq> -->
-                
-                <!-- <yournal> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Yournal <small class="text-muted">2017</small></h3>
-                    <a href="images/yournal.png"><img class="img-fluid" src="images/yournal.png"></a>
-                    <div class="card-body">
-                        <p class="card-text lead">Yournal is a minimalist and cloud-based diary where you can write your life and read it comfortably from any mobile device connected to the Internet. Designed with simplicity in mind, focused on user experience and made for people of all ages.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/yournal-android">
-                            <i class="fab fa-github"></i> Android</a>
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/yournal-ios">
-                            <i class="fab fa-github"></i> iOS</a>
-                        <a class="btn btn-sm btn-dark" 
-                            href="http://yournal.avalos.me">
-                            <i class="fas fa-reply"></i> Website</a>
-                        <a class="btn btn-sm btn-success" 
-                            href="https://play.google.com/store/apps/details?id=com.apps.yuxco.yournal">
-                            <i class="fab fa-google-play"></i> Google Play</a>
-                        <a class="btn btn-sm btn-warning" 
-                            href="https://itunes.apple.com/mx/app/yournal/id1449688447">
-                            <i class="fab fa-app-store"></i> App Store</a>
-                    </div>
-                </div>
-                <!-- </yournal> -->
-                
-                <!-- <xmas-mode> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Xmas mode <small class="text-muted">2017</small></h3>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/IVT-Yrz4oBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Tired of connecting and disconnecting your Christmas tree manually? This project consists on an automatized Christmas tree, which you can turn on and off from your phone.
-                        </p>
-                        <p class="card-text">
+                    <!-- </xmas-mode> -->
+                    
+                    <!-- <magic-car> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Magic Car <small class="text-muted">2016</small></h3>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/mkdhxUwZUAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead card-text">Magic Car is a simple TCP-IP powered car which you can control from your computer via WiFi.</p>
                             <h5>Materials</h5>
-                            <div class="list-group-wm">
-                                <a class="list-group-item list-group-item-action"
-                                    href="http://www.electrodragon.com/product/wifi-iot-relay-board-spdt-based-esp8266/">
-                                    WiFi IoT Relay Board based on ESP8266</a>
-                                <a class="list-group-item list-group-item-action"
-                                    href="http://www.electrodragon.com/product/orange-pi-one-better-rpi-zero/">
-                                    Orange Pi One</a>
-                            </div>
-                        </p>
-                        <p class="card-text">
-                            <h5>Software</h5>
-                            <div class="list-group-wm">
-                                <a class="list-group-item list-group-item-action" href="https://www.arduino.cc/en/Main/Software">
-                                    Arduino IDE <small class="text-muted">(Program ESP8266)</small></a>
-                                <a class="list-group-item list-group-item-action" href="https://developer.android.com/studio/index.html">
-                                    Android Studio <small class="text-muted">(Android app)</small></a>
-                                <a class="list-group-item list-group-item-action" href="https://projects.eclipse.org/projects">
-                                    Eclipse Mosquitto <small class="text-muted">(MQTT Server)</small></a>
-                                <a class="list-group-item list-group-item-action" href="http://www.eclipse.org/paho/">
-                                    Eclipse Paho <small class="text-muted">(MQTT Client)</small></a>
-                                <a class="list-group-item list-group-item-action" href="https://github.com/knolleary/pubsubclient">
-                                    PubSubClient Library <small class="text-muted">(ESP8266 MQTT Client)</small></a>
-                                <a class="list-group-item list-group-item-action" href="http://anjuta.org/">
-                                    Anjuta IDE <small class="text-muted">(GTK+ Linux application)</small></a>
-                            </div>
-                        </p>
+                            <p class="card-text">
+                                <div class="list-group">
+                                    <a class="list-group-item"
+                                        href="http://www.electrodragon.com/product/nodemcu-esp8266-ch340-version/">
+                                        NodeMCU V1.0</a>
+                                    <a class="list-group-item"
+                                        href="http://www.electrodragon.com/product/wificar-nodemcu-motor-shield/">
+                                        NodeMCU Motor Shield</a>
+                                    <a class="list-group-item"
+                                        href="http://app-tek.net/producto/chasis-seguidor-de-linea/">
+                                        Line follower chassis</a>
+                                </div>
+                            </p>
+                            <p class="card-text">
+                                <h5>Software</h5>
+                                <div class="list-group">
+                                    <a class="list-group-item"
+                                        href="https://www.qt.io/">Qt Creator</a>
+                                    <a class="list-group-item"
+                                        href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="https://github.com/ivan-avalos/magic-car">
+                                <i class="fab fa-github"></i> Source code</a>
+                            <a class="btn btn-sm btn-danger" 
+                                href="https://peertube.social/videos/watch/5cb4f28d-becc-4534-b7dd-991b56adad95">
+                                <i class="fas fa-video"></i> Video</a>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/xmas-mode">
-                            <i class="fab fa-github"></i> Source code</a>
-                        <a class="btn btn-sm btn-danger" 
-                            href="https://peertube.social/videos/watch/4e5b4911-79ae-426f-9377-dd4b0d852464">
-                            <i class="fas fa-video"></i> Video</a>
+                    <!-- </magic-car> -->
+                    
+                    <!-- <para-adivinadores> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Para adivinadores <small class="text-muted">2013</small></h3>
+                        <div class="bg-product text-center">
+                            <a href="images/para-adivinadores.png">
+                                <img class="img-fluid" src="images/para-adivinadores.png">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Para Adivinadores</b> was my first program and my introduction to the programming world. I made this program when I was 9 years old, using Visual Basic 6.0&trade;. It consists on a guessing game, where you have to find the right button in order to pass to the next level and win.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-primary" 
+                                href="files/para adivinadores.exe">
+                                <i class="fab fa-windows"></i> Download</a>
+                        </div>
                     </div>
+                    <!-- </para-adivinadores> -->
                 </div>
-                <!-- </xmas-mode> -->
-                
-                <!-- <magic-car> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Magic Car <small class="text-muted">2016</small></h3>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/mkdhxUwZUAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <p class="lead card-text">Magic Car is a simple TCP-IP powered car which you can control from your computer via WiFi.</p>
-                        <h5>Materials</h5>
-                        <p class="card-text">
-                            <div class="list-group-wm">
-                                <a class="list-group-item list-group-item-action"
-                                    href="http://www.electrodragon.com/product/nodemcu-esp8266-ch340-version/">
-                                    NodeMCU V1.0</a>
-                                <a class="list-group-item list-group-item-action"
-                                    href="http://www.electrodragon.com/product/wificar-nodemcu-motor-shield/">
-                                    NodeMCU Motor Shield</a>
-                                <a class="list-group-item list-group-item-action"
-                                    href="http://app-tek.net/producto/chasis-seguidor-de-linea/">
-                                    Line follower chassis</a>
-                            </div>
-                        </p>
-                        <p class="card-text">
-                            <h5>Software</h5>
-                            <div class="list-group-wm">
-                                <a class="list-group-item list-group-item-action"
-                                    href="https://www.qt.io/">Qt Creator</a>
-                                <a class="list-group-item list-group-item-action"
-                                    href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>
-                            </div>
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="https://github.com/ivan-avalos/magic-car">
-                            <i class="fab fa-github"></i> Source code</a>
-                        <a class="btn btn-sm btn-danger" 
-                            href="https://peertube.social/videos/watch/5cb4f28d-becc-4534-b7dd-991b56adad95">
-                            <i class="fas fa-video"></i> Video</a>
-                    </div>
-                </div>
-                <!-- </magic-car> -->
-                
-                <!-- <para-adivinadores> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Para adivinadores <small class="text-muted">2013</small></h3>
-                    <div class="bg-product text-center">
-                        <a href="images/para-adivinadores.png">
-                            <img class="img-fluid" src="images/para-adivinadores.png">
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"><b>Para Adivinadores</b> was my first program and my introduction to the programming world. I made this program when I was 9 years old, using Visual Basic 6.0&trade;. It consists on a guessing game, where you have to find the right button in order to pass to the next level and win.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-primary" 
-                            href="files/para adivinadores.exe">
-                            <i class="fab fa-windows"></i> Download</a>
-                    </div>
-                </div>
-                <!-- </para-adivinadores> -->
             </div>
-        </div>
-    </section>
-    <!-- </projects> -->
-    
-    <!-- <freelance> -->
-    <section id="freelance" class="container-fluid">
-        <h1 class="display-4">Freelance</h1>
-        <div class="row">
-            <div class="card-columns">
-                <!-- <vecbajio> -->
-                <div class="card border-0 project">
-                    <h3 class="card-header">Vecbajío <small class="text-muted">2013</small></h3>
-                    <div class="bg-light text-center">
-                        <a href="images/vecbajio.png"><img class="img-fluid" width="500" src="images/vecbajio.png"></a>
+        </section>
+        <!-- </projects> -->
+        
+        <!-- <freelance> -->
+        <section id="freelance" class="container-fluid portfolio">
+            <h1 class="display-4">Freelance</h1>
+            <div class="row">
+                <div class="card-columns">
+                    <!-- <vecbajio> -->
+                    <div class="card border-0 project">
+                        <h3 class="card-header">Vecbajío <small class="text-muted">2013</small></h3>
+                        <div class="bg-light text-center">
+                            <a href="images/vecbajio.png"><img class="img-fluid" width="500" src="images/vecbajio.png"></a>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead card-text">Vecbajío mobile app allows you to get real-time information from your GPS units right on your smartphone. You will be able to receive real-time notifications, visualize location and velocity: everything with a minimalist and easy to use interface, designed thinking about customer's needs.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-sm btn-success" 
+                                href="https://play.google.com/store/apps/details?id=com.apps.yuxco.remora">
+                                <i class="fab fa-google-play"></i> Google Play</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="lead card-text">Vecbajío mobile app allows you to get real-time information from your GPS units right on your smartphone. You will be able to receive real-time notifications, visualize location and velocity: everything with a minimalist and easy to use interface, designed thinking about customer's needs.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-sm btn-success" 
-                            href="https://play.google.com/store/apps/details?id=com.apps.yuxco.remora">
-                            <i class="fab fa-google-play"></i> Google Play</a>
-                    </div>
+                    <!-- </vecbajio> -->
                 </div>
-                <!-- </vecbajio> -->
             </div>
-        </div>
-    </section>
-    <!-- </freelance> -->
-    
+        </section>
+        <!-- </freelance> -->
+    </div>
     <!-- <footer> -->
     <footer class="footer-copyright text-white bg-yournal">
         <div class="container py-5">
