@@ -40,15 +40,6 @@
                         vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
                     }
                 }
-                var js = document.querySelectorAll(".js-disabled, .js-enabled");
-                for (var i = 0; i < js.length; i++) {
-                    if (js[i].classList.contains('js-disabled')) {
-                        js[i].style.display = 'none';
-                    }
-                    if (js[i].classList.contains('js-enabled')) {
-                        js[i].style.visibility = 'visible';
-                    }
-                }
             }
             window.onload = init;
     </script>
@@ -76,11 +67,14 @@
                     <p class="card-text lead">
                         I'm a 16 year old university student and amateur software developer,
                         designer and artist. Creative, intuitive, perfectionist and enthusiast.
-                        I have basic knowledge on different areas.</p>
-                    <small class="float-right card-text text-muted">
-                        Message me on <a href="https://keybase.io/avalos/chat">Keybase</a>!
-                        Or <a href="https://t.me/ivan_avalos/">Telegram</a>.
-                        Or <a href="mailto:ivan.avalos.diaz@hotmail.com">E-Mail</a>.</small>
+                        I have basic knowledge on different areas.
+                    </p>
+                    <p>
+                        <small class="float-right card-text text-muted">
+                            Message me on <a href="https://keybase.io/avalos/chat">Keybase</a>!
+                            Or <a href="https://t.me/ivan_avalos/">Telegram</a>.
+                            Or <a href="mailto:ivan.avalos.diaz@hotmail.com">E-Mail</a>.</small>
+                    </p>
                 </div>
                 <div class="card-footer text-center bottom-rounded">
                     <!-- Social links -->
@@ -183,7 +177,6 @@
         <!-- <links> -->
         <section id="more" class="container-fluid">
             <div class="card card-shadow card-rounded row">
-                <!-- Advanced skills -->
                 <h1 class="card-header bg-yournal top-rounded text-white">Links</h1>
                 <ul class="list-group list-group-flush bottom-rounded">
                     <a class="list-group-item" href="https://blog.avalos.me/">
@@ -202,31 +195,50 @@
             </div>
         </section>
         <!-- </links> -->
+        <!-- <support> -->
+        <section id="support" class="container-fluid">
+            <div class="card card-shadow card-rounded row">
+                <h1 class="card-header bg-yournal top-rounded text-white">Support</h1>
+                <div class="card-body">
+                    <p>I do a lot of free and open-source projects and I would really appreciate some small gift :3.</p>
+                    <span><b>BTC:</b> 167uW9vAZXotDEBKEFgAjGf92peiV1PWRE</span><br>
+                    <span><b>XLM:</b> avalos*stellarx.com</span>
+                </div>
+                <div class="card-footer bottom-rounded">
+                    <script src="https://liberapay.com/avalos/widgets/button.js"></script>
+                    <noscript><a href="https://liberapay.com/avalos/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+                    <a href="https://paypal.me/iamavalos/" class="btn btn-sm btn-primary"><i class="fab fa-paypal"></i> PayPal</a>
+                </div>
+            </div>
+        </section>
+        <!-- </support> -->
         <!-- <gallery> -->
         <!-- Slider main container -->
         <section id="gallery" class="container-fluid">
             <div class="card card-shadow card-rounded row">
                 <h1 class="card-header bg-yournal top-rounded text-white">Gallery</h1>
-                <div class="card-body bg-white js-disabled">
-                    <h4>Javascript is disabled</h4>
-                    This element requires Javascript.
-                </div>
-                <div class="swiper-container bottom-rounded card-shadow js-enabled">
+                <noscript>
+                    <div class="card-body bg-white">
+                        <h4>Javascript is disabled</h4>
+                        This element requires Javascript.
+                    </div>
+                </noscript>
+                <div class="swiper-container bottom-rounded card-shadow">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide vignete" style="background: url(images/gallery/premio-juventud.jpg)">
-                            <figcaption>
-                                <b>Municipal Youth Award 2019</b><br>
-                                <small>Won in the "academic achievement" distinction because of my career path and aspirations.</small>
-                            </figcaption> 
-                        </div>
                         <div class="swiper-slide vignette" style="background: url(images/gallery/facebook.jpg)">
                             <figcaption>
                                 <b>Facebook Campus</b><br>
                                 <small>Went to a meeting to Facebook headquarters in Menlo Park, CA.</small>
                             </figcaption>
                         </div>  
+                        <div class="swiper-slide vignete" style="background: url(images/gallery/premio-juventud.jpg)">
+                            <figcaption>
+                                <b>Municipal Youth Award 2019</b><br>
+                                <small>Won in the "academic achievement" distinction because of my career path and aspirations.</small>
+                            </figcaption> 
+                        </div>
                         <div class="swiper-slide vignette" style="background: url(images/gallery/hackleon.jpg)">
                             <figcaption>
                                 <b>HackLeón 2019</b><br>
@@ -492,7 +504,7 @@
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-sm btn-primary" 
-                                href="files/para adivinadores.exe">
+                                href="https://github.com/ivan-avalos/ivan-avalos.github.io/releases/download/latest/para.adivinadores.exe">
                                 <i class="fab fa-windows"></i> Download</a>
                         </div>
                     </div>

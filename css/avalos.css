@@ -130,7 +130,7 @@ figcaption {
     .card-columns {column-count: 1;}
 }
 @media (min-width: 768px) {
-    #home, #skills, #more, #gallery {
+    #home, #skills, #more, #support, #gallery {
         width: 710px;
     }
     .card-columns {column-count: 2;margin:0rem;}
