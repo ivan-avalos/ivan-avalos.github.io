@@ -40,7 +40,7 @@
 }
 
 .darkmode--activated .skill {
-    background: var(--avalos-dark-3);
+    background: var(--avalos-dark-3) !important;
 }
 
 .darkmode--activated .social-item {
