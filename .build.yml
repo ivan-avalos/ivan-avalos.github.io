@@ -1,6 +1,4 @@
 image: alpine/edge
-sources:
-  - https://git.sr.ht/~avalos/personal-website
 environment:
   deploy: ec2-user@avalos.me
   folder: /var/www/avalos.dulcedosystems.com/public_html/
