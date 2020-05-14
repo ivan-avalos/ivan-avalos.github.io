@@ -1,0 +1,11 @@
+image: alpine/edge
+sources:
+  - https://git.sr.ht/~avalos/personal-website
+environment:
+  deploy: ec2-user@avalos.me
+  folder: /var/www/avalos.dulcedosystems.com/public_html/
+secrets:
+  - 44deb6d9-1368-429f-a180-ac8f3cf0efc6
+tasks:
+  - deploy: |
+      ssh $deploy cd $folder; sudo git pull sourcehut master
