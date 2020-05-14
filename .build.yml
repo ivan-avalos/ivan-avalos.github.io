@@ -6,4 +6,4 @@ secrets:
   - 44deb6d9-1368-429f-a180-ac8f3cf0efc6
 tasks:
   - deploy: |
-      ssh -oStrictHostKeyChecking=no $deploy bash -c "cd $folder && sudo git pull sourcehut master"
+      ssh -oStrictHostKeyChecking=no $deploy bash -c "'cd $folder && sudo git pull sourcehut master'"
