@@ -1,5 +1,7 @@
+@import url("../fonts/jetbrains.css");
+
 body {
-    font-family: 'IBM Plex Mono', 'Consolas', 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono', 'Menlo', 'SF Mono', 'Consolas', 'Courier New', Courier, monospace;
 }
 nav {
     padding-top: 30px !important;

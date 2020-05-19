@@ -34,11 +34,12 @@
 .darkmode--activated .text-muted {
     color: var(--avalos-light-2) !important;
 }
-
+.darkmode--activated .link {
+	color: #4fc3f7;
+}
 .darkmode--activated .list-group-item {
     background: var(--avalos-dark-1);
 }
-
 .darkmode--activated .skill {
     background: var(--avalos-dark-3) !important;
 }
