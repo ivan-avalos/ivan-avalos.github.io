@@ -40,6 +40,9 @@
 .darkmode--activated .list-group-item {
     background: var(--avalos-dark-1);
 }
+.darkmode--activated .project>.card-body>.list-group>.list-group-item {
+	background: var(--avalos-dark-0);
+}
 .darkmode--activated .skill {
     background: var(--avalos-dark-3) !important;
 }
