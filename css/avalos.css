@@ -98,7 +98,11 @@ section>.card>.card-header {
 }
 
 figcaption {
-    box-sizing: border-box;
+    
+}
+
+.swiper-slide>figcaption {
+	box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
