@@ -91,16 +91,6 @@ section>.card>.card-header {
     -o-background-size: cover !important;
     background-size: cover !important;
 }
-.vignette {
-    -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.6);
-    -moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.6);
-    box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.6);
-}
-
-figcaption {
-    
-}
-
 .swiper-slide>figcaption {
 	box-sizing: border-box;
     position: absolute;
@@ -109,7 +99,7 @@ figcaption {
     width: 100%;
     padding: 10px;
     color: #FFF;
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.5);
     vertical-align: middle;
     padding-left: 20px;
     padding-bottom: 30px;
