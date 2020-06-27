@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Ávalos</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/avalos.css">
+    <link rel="stylesheet" href="css/avalos-dark.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/fa.min.css">
+    <script>
+	  document.addEventListener('DOMContentLoaded', function(event) {
+		  document.getElementById('switchTheme').style.visibility = 'visible';
+	  });
+    </script>
+  </head>
+  <body>
+    <div class="layer bg-light">
+      <!-- <navbar> -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-yournal">
+          <span class="mb-0 h3 mr-auto"><a href="index.html" class="text-white">&lt; Dev portfolios</a></span>
+          <span class="navbar-text mr-3">
+            <a id="switchTheme" href="#" class="btn btn-sm btn-dark"
+               onclick="switchTheme()" style="visibility: hidden;">
+              Dark Mode
+            </a>
+          </span>
+        </nav>
+        <!-- </navbar> -->
+      <section id="skills" class="container-fluid pb-5">
+        <div class="card card-shadow card-rounded row">
+          <div class="list-group list-group-flush bottom-rounded">
+            <a class="list-group-item link top-rounded" href="https://sr.ht/~avalos">
+              <i class="far fa-circle"></i> Sourcehut</a>
+		    <a class="list-group-item link top-rounded" href="https://github.com/ivan-avalos">
+              <i class="fab fa-github"></i> GitHub</a>
+            <a class="list-group-item link" href="https://gitlab.com/iavalos">
+              <i class="fab fa-gitlab"></i> GitLab</a>
+            <a class="list-group-item link" href="https://chiselapp.com/user/avalos">
+              <i class="fas fa-code-branch"></i> Chisel (Fossil)</a>
+            <a class="list-group-item link" href="https://cybre.tech/avalos">
+              <i class="fab fa-git-alt"></i> Cybrespace Gitea</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <!-- JavaScript -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/avalos.js"></script>
+</html>
